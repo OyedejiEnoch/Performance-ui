@@ -87,7 +87,7 @@ const TestimonialsCard = (props:{className?:string, testimonials:typeof testimon
     }}
     >
           {[... new Array(2).fill(0).map((_, index)=>(
-            <React.Fragment>
+            <React.Fragment key={index}>
                  {props.testimonials.map(testimonials=>(
             <div key={testimonials.text} className="card"> 
               <div>{testimonials.text}</div>
